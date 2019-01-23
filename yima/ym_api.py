@@ -15,8 +15,8 @@ header_dict = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko'}
 
 # 登陆/获取TOKEN
-username = 'astro1boy'  # 账号
-password = '123123123q'  # 密码
+username = ''  # 账号
+password = ''  # 密码
 url =  'http://api.fxhyd.cn/UserInterface.aspx?action=login&username=' + \
     username+'&password='+password
 TOKEN1 = request.urlopen(request.Request(

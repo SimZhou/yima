@@ -76,6 +76,7 @@ class YMClient:
                 print(a)
                 time.sleep(5)
             else:
+                print(a)
                 break
         return a[1]
         
@@ -113,7 +114,5 @@ class YMClient:
         else:
             return '错误'+response+':'+error_codes._codes.get(int(response))
 
-#a = YMClient('astro1boy', '123123123', token='00144021070a8722f3d60596791467aaa141a14a9e01')    
-#b = YMClient('astro1boy', '123123123')
 if __name__ == '__main__': 
     pass

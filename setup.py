@@ -12,7 +12,7 @@ setup(
     author='Simon Zhou',
     author_email='yihua.zhou@outlook.com',
     description=(
-        '<项目的简单描述>'
+        'This project is a user-friendly python api for yima: http://www.51ym.me/'
     ),
     long_description=open('README.md', 'r', encoding='utf-8').read(),
     long_description_content_type="text/markdown",
