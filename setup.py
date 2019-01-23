@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='yima',
-    version=0.1.0,
+    version='0.1.1',
     author='Simon Zhou',
     author_email='yihua.zhou@outlook.com',
     description=(
@@ -20,7 +20,6 @@ setup(
     packages=find_packages(),
     platforms=["all"],
     install_requires=[
-        'time',
         'requests>=2.19.0',
     ],
     classifiers=[
