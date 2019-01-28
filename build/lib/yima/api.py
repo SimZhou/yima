@@ -76,13 +76,17 @@ class YMClient:
         stime = time.time()
         while time.time()-stime <= timeout:
             a = self.get_sms(itemid, mobile, release=release)
-            if a[0] != 'success':
-                print(a)
+            if a[0] == 3001:
+                print(a[1]+"，5秒后重试...")
                 time.sleep(5)
-            else:
-                print(a)
+            elif a[0] == 'success':
+                print("获取短信成功，短信内容为：\n"+a[1])
+                return a[1]
                 break
-        return a[1]
+            else:
+                raise Exception(a[1])
+        if a[0] != 'success':
+            raise Exception("Timeout")
         
     def send_sms(self, itemid, mobile, sms, number=None):
         params = {}

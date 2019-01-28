@@ -84,9 +84,9 @@ class YMClient:
                 return a[1]
                 break
             else:
-                break
+                raise Exception(a[1])
         if a[0] != 'success':
-            raise Exception(a[1])
+            raise Exception("Timeout")
         
     def send_sms(self, itemid, mobile, sms, number=None):
         params = {}

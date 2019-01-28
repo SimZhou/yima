@@ -55,6 +55,9 @@ release()可以释放手机。
 
 
 ## 3. 版本历史
+### 2019.1.28 - 版本 0.1.3
+- 现在使用fetch_sms_until_succeed()函数，仅在返回错误码为“3001”-“尚未收到短信”时才会尝试重试，如果返回的是其它错误码，则会raise报错信息。如果超时,则会raise超时错误。
+
 ### 2019.1.24 - 版本 0.1.2
 - 修复了如果服务器返回错误代码时，程序会出现 `NameError: name 'error_codes' is not defined` 的错误
 - 在get_sms()函数中添加了release参数的接口
