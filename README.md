@@ -71,5 +71,5 @@ release()可以释放手机。
 - 第一次尝试发PyPI包，好紧张啊，会不会有潜规则啊
 
 ## 4. Bug反馈及功能需求添加
-如果发现程序bug或功能不完善的地方，欢迎联系：yihua.zhou@outlook.com。
+如有发现bug或有其它功能需求，请直接发Issue或者联系：yihua.zhou@outlook.com。
 
